@@ -1,0 +1,31 @@
+
+<div class="body">
+  <div class="header">
+
+    <div class="featured--vertical">
+      <div class="featured--horizontal">
+        <div class="featured--name"><h1>{{title}}</h1></div>
+        <h2 class="featured--seasons"> Avengers Universe</h2>
+      </div>
+     </div>
+
+ <div class="lists">
+
+
+    <div class="movieRow">
+      <div class="movieRow--listarea" *ngFor="let comic of comics">
+        <div class="movieRow--list">
+          <div class="movieRow--item">
+            <div class="">
+              <img src="{{ comic.thumbnail.path }}.{{ comic.thumbnail.extension }}" />
+            </div>
+            <div class="">
+              <h5 class="">{{ comic.name }}</h5>
+              <p class=""></p>
+            </div>
+            </div>
+        </div><s></s>
+      </div>
+    </div>
+  </div>
+</div>

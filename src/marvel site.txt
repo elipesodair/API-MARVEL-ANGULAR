@@ -1,0 +1,18 @@
+Your public key
+
+7008eb4af936ed94f6de42445cc85943
+
+
+Your private key
+
+948d37ed518b64b7b5d8689ec31b5a50afc18e27
+
+
+
+
+COMANDO TIMESTEMP 
+CONSOLE DO BROWSER 
+Math.floor(Date.now() / 1000
+
+------------------------------------------------
+{{ comic.description }}
