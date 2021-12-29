@@ -7,10 +7,14 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MarvelService } from './services/marvel.service';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { HeaderComponent } from './components/header/header.component';
+import { FeaturedComponent } from './components/featured/featured.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FeaturedComponent
   ],
   imports: [
     BrowserModule,
