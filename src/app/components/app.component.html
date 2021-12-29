@@ -2,16 +2,13 @@
  <app-header></app-header>
  <app-featured></app-featured>
  <div class="movieRow">
-
     <div class="movieRow--listarea">
       <div class="movieRow--item" *ngFor="let comic of comics">
         <div class="movieRow--list">
-          <div class="movieRow--item">
-              <img src="{{ comic.thumbnail.path }}.{{ comic.thumbnail.extension }}" />
-            </div>
+              <img src="{{ comic.thumbnail.path }}.{{ comic.thumbnail.extension }}"/>
             <div class="">
-              <h5 class=""></h5>
-              <p class=""></p>
+            <h5 class="{{ comic.name}}"></h5>
+              <p class="{{ comic.description}}"></p>
             </div>
         </div>
       </div>
