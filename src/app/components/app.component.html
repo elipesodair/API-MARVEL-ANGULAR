@@ -5,11 +5,9 @@
     <div class="movieRow--listarea">
       <div class="movieRow--item" *ngFor="let comic of comics">
         <div class="movieRow--list">
-              <img src="{{ comic.thumbnail.path }}.{{ comic.thumbnail.extension }}"/>
-            <div class="">
+          <img src="{{ comic.thumbnail.path }}.{{ comic.thumbnail.extension }}"/>
             <h5 class="{{ comic.name}}"></h5>
               <p class="{{ comic.description}}"></p>
-            </div>
         </div>
       </div>
     </div>
