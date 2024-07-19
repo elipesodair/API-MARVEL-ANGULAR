@@ -1,5 +1,5 @@
 header {
-  position: relative;
+  position: fixed; /* Torna o header fixo no topo da página */
   z-index: 999;
   top: 0;
   left: 0;
@@ -10,8 +10,9 @@ header {
   align-items: center;
   padding: 0 30px;
   background: transparent;
-  transition: all ease 0.5s;
+  transition: background-color 0.5s ease;
 }
+
 header.black {
   background-color: #141414;
 }
@@ -22,4 +23,50 @@ header.black {
 
 .header--logo img {
   height: 100%;
+}
+
+.header--user {
+  height: 50%; /* Ajusta a altura da imagem de usuário */
+}
+
+.header--user img {
+  height: 100%;
+  border-radius: 3px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  header {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 10px;
+    height: 60px;
+  }
+
+  .header--logo {
+    height: 50px;
+  }
+
+  .header--user {
+    height: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 0 5px;
+    height: 50px;
+  }
+
+  .header--logo {
+    height: 40px;
+  }
+
+  .header--user {
+    height: 30%;
+  }
 }

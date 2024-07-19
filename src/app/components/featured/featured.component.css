@@ -1,28 +1,23 @@
 .featured {
   padding-top: 0;
   height: 50vh;
-  background-repeat: 'cover';
-  background-position: 'center';
-  background: no-repeat;
-  background-image: url(https://wallpaperaccess.com/full/1347877.jpg);
+  background: url(https://wallpaperaccess.com/full/1347877.jpg) no-repeat center center / cover;
 }
 
 .featured--vertical {
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(to top, #111 10%, transparent);
 }
 
 .featured--horizontal {
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(to right, #111 30%, transparent 70%);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 30px;
-  padding-bottom: 150px;
-  padding-top: 70px;
+  padding: 70px 30px 150px 30px;
 }
 
 .featured--name {
@@ -42,7 +37,7 @@
 
 .featured--description {
   margin-top: 15px;
-  font-size: 40px;
+  font-size: 20px;
   color: #999;
   max-width: 40%;
 }
@@ -54,20 +49,21 @@
 .featured--mylistbutton,
 .featured--watchbutton {
   display: inline-block;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
   padding: 12px 25px;
   border-radius: 5px;
   text-decoration: none;
   margin-right: 10px;
   opacity: 1;
-  transition: all ease 0.2s;
+  transition: opacity 0.2s ease;
 }
 
 .featured--mylistbutton:hover,
 .featured--watchbutton:hover {
   opacity: 0.7;
 }
+
 .featured--watchbutton {
   background-color: #fff;
   color: #000;
@@ -84,25 +80,36 @@
   color: #999;
 }
 
+/* Media Queries */
 @media (max-width: 760px) {
   .featured {
     height: 90vh;
   }
+
+  .featured--horizontal {
+    padding: 70px 20px 100px 20px;
+  }
+
   .featured--name {
     font-size: 35px;
   }
+
   .featured--info {
     font-size: 16px;
   }
+
   .featured--description {
-    font-size: 12px;
+    font-size: 14px;
     max-width: 100%;
-    margin-right: 30px;
+    margin-right: 0;
   }
+
   .featured--mylistbutton,
   .featured--watchbutton {
-    font-size: 10px;
+    font-size: 14px;
+    padding: 10px 20px;
   }
+
   .featured--genres {
     font-size: 14px;
   }

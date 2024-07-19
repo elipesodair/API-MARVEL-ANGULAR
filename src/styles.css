@@ -1,41 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
- box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: #111;
-    color :#fff;
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+body {
+  background-color: #111;
+  color: #fff;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
-.lists{
-    margin-top: -150px;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-footer{
-    margin: 50px 0;
-    text-align: center;
+.lists {
+  margin-top: -150px;
 }
 
-.loading{
-    position: fixed;
-    top:0;
-    left:0;
-    right: 0;
-    bottom: 0;
-    z-index: 99;
-    background-color: #000;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+footer {
+  margin: 50px 0;
+  text-align: center;
 }
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header {
   position: fixed;
   z-index: 999;
-  top:0;
+  top: 0;
   left: 0;
   right: 0;
   height: 70px;
@@ -44,8 +54,9 @@ header {
   align-items: center;
   padding: 0 30px;
   background: transparent;
-  transition: all ease 0.5s ;
+  transition: all ease 0.5s;
 }
+
 header.black {
   background-color: #141414;
 }
@@ -65,4 +76,45 @@ header.black {
 .header--user img {
   height: 100%;
   border-radius: 3px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+
+  header {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 0 10px;
+    height: 60px;
+  }
+
+  .header--logo {
+    height: 50px;
+  }
+
+  .header--user {
+    height: 40%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 0 5px;
+    height: 50px;
+  }
+
+  .header--logo {
+    height: 40px;
+  }
+
+  .header--user {
+    height: 30%;
+  }
 }
