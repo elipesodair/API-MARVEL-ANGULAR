@@ -8,9 +8,6 @@
 5. [Running end-to-end tests](#running-end-to-end-tests)
 6. [Further help](#further-help)
 
----
-
-Você pode adicionar esse índice no início do seu README para facilitar a navegação.
 # MarvelApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
