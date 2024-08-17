@@ -1,5 +1,18 @@
 # MarvelApp
 
+## Índice
+1. [Development server](#development-server)
+2. [Code scaffolding](#code-scaffolding)
+3. [Build](#build)
+4. [Running unit tests](#running-unit-tests)
+5. [Running end-to-end tests](#running-end-to-end-tests)
+6. [Further help](#further-help)
+
+---
+
+Você pode adicionar esse índice no início do seu README para facilitar a navegação.
+# MarvelApp
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.2.
 
 ## Development server
